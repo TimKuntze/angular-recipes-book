@@ -6,11 +6,11 @@
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
     <p class="list-group-item-text">{{ recipe.description }}</p>
   </div>
-  <div class="pull-right">
+  <span class="pull-right">
     <img
-      src="{{ recipe.imagePath }}"
+      [src]="recipe.imagePath"
       alt="{{ recipe.name }}"
       class="img-responsive"
-      style="max-height: 50px;">
-  </div>
+      style="height: 50px; width: 50px; object-fit: cover">
+  </span>
 </a>
